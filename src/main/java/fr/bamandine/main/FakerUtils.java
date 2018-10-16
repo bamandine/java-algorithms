@@ -6,8 +6,6 @@ import com.github.javafaker.Faker;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
-import java.util.stream.IntStream;
-import java.util.stream.Stream;
 
 public class FakerUtils {
     private static final Faker FAKER = new Faker();
