@@ -1,10 +1,10 @@
 package fr.bamandine.main;
 
-import fr.bamandine.list.ListExamples;
+import fr.bamandine.list.ExercicesEntrainement;
+import fr.bamandine.list.ExercicesSelection;
 
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 
 /**
  * Main class for launch algorithms
@@ -16,7 +16,7 @@ public class Main {
         String filename = "input3.txt";
 
         ClassLoader classLoader = this.getClass().getClassLoader();
-        return new File(classLoader.getResource("samples/"+ filename).getFile());
+        return new File(classLoader.getResource("inventaire/"+ filename).getFile());
     }
 
     public static void main(String[] args) throws Exception {
@@ -24,6 +24,9 @@ public class Main {
 
         System.setIn(new FileInputStream(main.getSampleFile()));
 
-        ListExamples.minDivideByNList();
+        ExercicesSelection.inventaire();
+//        ExercicesEntrainement.rectangleRecouvrant();
+//        ExercicesEntrainement.blockchain();
+//        ExercicesEntrainement.minDivideByNList();
     }
 }
