@@ -1,6 +1,5 @@
 package fr.bamandine.main;
 
-import fr.bamandine.list.ExercicesEntrainement;
 import fr.bamandine.list.ExercicesSelection;
 
 import java.io.File;
@@ -11,22 +10,23 @@ import java.io.FileInputStream;
  */
 public class Main {
 
-    private File getSampleFile() {
-
-        String filename = "input3.txt";
-
-        ClassLoader classLoader = this.getClass().getClassLoader();
-        return new File(classLoader.getResource("inventaire/"+ filename).getFile());
-    }
-
     public static void main(String[] args) throws Exception {
         Main main = new Main();
 
         System.setIn(new FileInputStream(main.getSampleFile()));
 
-        ExercicesSelection.inventaire();
+        ExercicesSelection.numTelephone();
+//        ExercicesSelection.inventaire();
 //        ExercicesEntrainement.rectangleRecouvrant();
 //        ExercicesEntrainement.blockchain();
 //        ExercicesEntrainement.minDivideByNList();
+    }
+
+    private File getSampleFile() {
+
+        String filename = "input2.txt";
+
+        ClassLoader classLoader = this.getClass().getClassLoader();
+        return new File(classLoader.getResource("numTelephones/" + filename).getFile());
     }
 }
