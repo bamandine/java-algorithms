@@ -1,4 +1,4 @@
-package fr.bamandine.list;
+package src.main.java.fr.bamandine.list;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -66,6 +66,7 @@ public class ExercicesMDF2017 {
         }
 
         System.out.println(trouve);
+
     }
 
     public static class Elt {

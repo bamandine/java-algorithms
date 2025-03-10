@@ -1,9 +1,6 @@
-package fr.bamandine.list;
-
-import javafx.collections.transformation.SortedList;
+package src.main.java.fr.bamandine.list;
 
 import java.util.*;
-import java.util.stream.Collectors;
 
 public class ExercicesMDF2016 {
 
@@ -189,6 +186,9 @@ public class ExercicesMDF2016 {
 
     }
 
+
+
+
     public static class Piece {
         int nbre;
         int valeur;
@@ -198,4 +198,7 @@ public class ExercicesMDF2016 {
             this.valeur = valeur;
         }
     }
+
+
+
 }

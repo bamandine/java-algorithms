@@ -1,4 +1,4 @@
-package fr.bamandine.list;
+package src.main.java.fr.bamandine.list;
 
 import java.util.*;
 

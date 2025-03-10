@@ -1,4 +1,4 @@
-package fr.bamandine.node;
+package src.main.java.fr.bamandine.node;
 
 import java.util.List;
 import java.util.function.BinaryOperator;
